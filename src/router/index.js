@@ -10,7 +10,7 @@ import ParentComponent from '../views/ParentComponent.vue'
 import ParentComponent2 from '../views/ParentComponent2.vue'
 import ParentComponent4 from '../views/ParentComponent4.vue'
 import ParentComponent5 from '../views/ParentComponent5.vue'
-
+import StoreAccess from '../views/StoreAccess.vue'
 const routes = [
   {
     path: '/',
@@ -79,6 +79,36 @@ const routes = [
     path: '/slot',
     name: 'SlotUseModalLayout',
     component: () => import( /* webpackChunkName: "slot" */ '../views/SlotUseModalLayout.vue')
+  },
+  {
+    path: '/calculator',
+    name: 'calculator',
+    component: () => import( /* webpackChunkName: "slot" */ '../views/Calculator.vue')
+  },
+  {
+    path: '/calculatorapi',
+    name: 'calculatorapi',
+    component: () => import( /* webpackChunkName: "slot" */ '../views/CalculatorAPI.vue')
+  },
+  {
+    path: '/calculatorapi2',
+    name: 'calculatorapi2',
+    component: () => import( /* webpackChunkName: "slot" */ '../views/CalculatorAPI2.vue')
+  },
+  {
+    path: '/calculatorapi3',
+    name: 'calculatorapi3',
+    component: () => import( /* webpackChunkName: "slot" */ '../views/CalculatorAPI3.vue')
+  },
+  {
+    path: '/calculatorapi4',
+    name: 'calculatorapi4',
+    component: () => import( /* webpackChunkName: "slot" */ '../views/CalculatorAPI4.vue')
+  },
+  {
+    path: '/storeaccess',
+    name: 'storeaccess',
+    component:StoreAccess
   }
 ]
 
